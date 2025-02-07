@@ -1,0 +1,19 @@
+[package]
+name = "reversi_client_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+rand = "0.8"
+thiserror = "2.0"
+
+[lib]
+name = "reversi_client"
+path = "src/lib.rs"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 0
