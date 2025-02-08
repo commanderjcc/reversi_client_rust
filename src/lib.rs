@@ -150,6 +150,12 @@ impl<S: ReversiStrategy> ReversiClient<S> {
 
         self.board = board;
 
+        if self.player_number == 1 {
+            self.game_minutes = parts[2].parse::<f32>().unwrap_or(0.0);
+        } else {
+            self.game_minutes = parts[3].parse::<f32>().unwrap_or(0.0);
+        }
+
 
         let small_turn = turn as i8;
 
