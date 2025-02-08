@@ -1,7 +1,13 @@
 [package]
 name = "reversi_client_rust"
+description = "A client for the Reversi game server used in BYU CS 470"
+repository = "https://github.com/commanderjcc/reversi_client_rust"
+homepage = "https://github.com/commanderjcc/reversi_client_rust"
 version = "0.1.0"
 edition = "2021"
+license-file = "LICENSE"
+authors = ["Josh Christensen"]
+
 
 [dependencies]
 tokio = { version = "1.0", features = ["full"] }
@@ -16,4 +22,4 @@ path = "src/lib.rs"
 opt-level = 0
 
 [profile.release]
-opt-level = 0
+opt-level = 3
